@@ -8,7 +8,7 @@ size = Vector2(20, 130)
 
 [node name="Jogador" type="StaticBody2D"]
 script = ExtResource("1_q4d2k")
-jogador1 = null
+jogador1 = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_1wxd6")
