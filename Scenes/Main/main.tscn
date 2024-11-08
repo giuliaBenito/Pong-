@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdsdlf5y1fvwe"]
+
+[ext_resource type="Texture2D" uid="uid://ctbhmp0h1kej6" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/campo-roxo.png" id="1_mv6nn"]
+[ext_resource type="Texture2D" uid="uid://cynb2habrp6br" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/jogador.png" id="2_0amvs"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Campo" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_mv6nn")
+
+[node name="LinhaCampo" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.5, 5.538)
+texture = ExtResource("2_0amvs")

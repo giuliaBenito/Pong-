@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjfv0ym8wf8h7"]
+
+[ext_resource type="Texture2D" uid="uid://cynb2habrp6br" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/jogador.png" id="1_1wxd6"]
+[ext_resource type="Script" path="res://Scenes/Jogador/jogador.gd" id="1_q4d2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qgush"]
+size = Vector2(20, 130)
+
+[node name="Jogador" type="StaticBody2D"]
+script = ExtResource("1_q4d2k")
+jogador1 = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1wxd6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qgush")
