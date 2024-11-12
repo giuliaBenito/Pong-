@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cdsdlf5y1fvwe"]
+[gd_scene load_steps=5 format=3 uid="uid://cdsdlf5y1fvwe"]
 
 [ext_resource type="Texture2D" uid="uid://ctbhmp0h1kej6" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/campo-roxo.png" id="1_mv6nn"]
 [ext_resource type="Texture2D" uid="uid://cynb2habrp6br" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/jogador.png" id="2_0amvs"]
 [ext_resource type="PackedScene" uid="uid://bjfv0ym8wf8h7" path="res://Scenes/Jogador/jogador.tscn" id="3_7u5xn"]
+[ext_resource type="PackedScene" uid="uid://6tgmeem87d1v" path="res://Scenes/Bola/bola.tscn" id="4_bdc6v"]
 
 [node name="Main" type="Node2D"]
 
@@ -17,8 +18,10 @@ texture = ExtResource("2_0amvs")
 
 [node name="Jogador1" parent="." instance=ExtResource("3_7u5xn")]
 position = Vector2(64, 360)
-jogador1 = true
 
 [node name="Jogador2" parent="." instance=ExtResource("3_7u5xn")]
 position = Vector2(1216, 360)
 jogador1 = false
+
+[node name="bola" parent="." instance=ExtResource("4_bdc6v")]
+position = Vector2(640, 360)

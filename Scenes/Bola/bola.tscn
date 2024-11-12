@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://6tgmeem87d1v"]
+
+[ext_resource type="Script" path="res://Scenes/Bola/bola.gd" id="1_xy6ew"]
+[ext_resource type="Texture2D" uid="uid://dshrs82r2uop1" path="res://assets-do-curso-pong-na-godot-4-main/arquivos/assets/sprites/bola.png" id="2_pdqnl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anhwb"]
+
+[node name="bola" type="Area2D"]
+script = ExtResource("1_xy6ew")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pdqnl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_anhwb")
